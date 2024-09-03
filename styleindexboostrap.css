@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000A7B;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.head a:hover{
+    color: red;
+}   
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}   
+   
+.container-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 12%;
+}
+
+.container-bar a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: blanchedalmond;
+}
+
+.container-bar a:hover{
+	background: aqua;
+}
+
+.container-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-envelope{
+	background: #e52a23;
+}
+.container-bar .fa-x-twitter{
+	background: #9c00a1;
+}
+.container-bar .fa-phone{
+	background: #747473;
+}
+.container-bar .fa-whatsapp{
+	background: #0dcf27;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar #title{
+	position: absolute;
+	background: red;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid blanchedalmond;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+}
+
+.logo {
+    margin-left: 3px;
+    display: flex; 
+    align-items: center; 
+    height: 60px; 
+}
+
+.logo a {
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+.logo img {
+    max-height: 40%;
+    max-width: 40%; 
+    height: auto; 
+}
+
+.navbar a {
+    display: block;
+    padding: 20px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+    
+.navbar a:hover {
+    background-color: aqua;
+}    
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/camiones02.jpg) no-repeat center center/cover;
+    color: #ffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header .content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+}
+
+.p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #ffff;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #000A7B;
+    color: #ffff;
+    text-decoration: none;
+    background: #000A7B;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: none;
+    color: #000A7B;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a { 
+    margin: 5px;
+}
+
+.sau {
+    padding: 100px;
+    background: #272727;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #000000;
+    padding: px;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 5);
+    margin: 2rem;
+}
+
+.box-container .box:hover {
+background-color: aqua;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: whitesmoke;
+    background-color: #000A7B;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.box-container a {
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px 480px;
+    padding: 5px 50px;
+    border: 1px solid #000A7B;
+    color: #ffff;
+    text-decoration: none;
+    background: #000A7B;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.box-container a:hover {
+    background-color: aqua;
+    color: red;
+}
+.box-container .box h3 {
+    font-size: 20px;
+    color: #000A7B;
+}
+
+.box-container .box h3:hover{
+    color:red;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    max-width: 2000px;
+    padding: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    background: url(img/fondo1.jpg) no-repeat center center/cover;
+}
+
+.box-content {
+    height: 22rem;
+    border-radius: 10%;
+    background-color: #171717;
+    background: rgba(138, 138, 138, 0.123);
+    margin: 7rem 0;
+    border-radius: 52px;
+}
+
+.mision{
+    right: 10px;
+    padding: 10px;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.text {
+    color: #ffffff;
+}
+
+.services {
+    background: url(img/camiones01.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px 10px;
+}
+
+.services .contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Background semi-transparente para mejor legibilidad */
+    border-radius: 10px;
+}
+
+.services .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.services .text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: calc(50% - 20px);
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    height: 3rem;
+    width: 3em;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 100%;
+    color: #000000;
+    font-size: 2rem;
+    margin: 1rem 0;}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+.title-card {
+    color: #424242;
+}
+
+.contact {
+    padding: 60px 20px;
+    background: #171717;
+    color: #fff;
+    text-align: center;
+}
+
+.contact .contain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact .text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.map {
+    flex: 1 1 40%;
+    margin-bottom: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form {
+    flex: 1 1 55%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: #fff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+}
+
+.btn-submit {
+    background: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: aqua;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map, .contact-form {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 120vh;   
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: #000A7B;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;  
+    }
+}
+

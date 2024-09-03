@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesBDamaroklogin&registrer.css">
+    <script src="scriptlogin&registrer.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>INVERSIONES TECNOLOGICAS AMAROK</h1>
+        <img src="img/Amarok.jpg" alt="Banner Principal">
+        <p>Desarrollado por TechMindsLab</p>
+    </header>
+
+    <div class="menu">
+        <button onclick="mostrarSeccion('usuarios')">USUARIOS</button>
+        <button onclick="mostrarSeccion('clientes')">CLIENTES</button>
+        <button onclick="mostrarSeccion('ventas')">VENTAS</button>
+        <button onclick="mostrarSeccion('proveedores')">PROVEEDORES</button>
+        <button onclick="mostrarSeccion('categorias')">CATEGORIAS</button>
+        <button onclick="mostrarSeccion('productos')">PRODUCTOS</button>
+        <button onclick="mostrarSeccion('Id_facturacion')">ID_FACTURACION</button>
+        <button onclick="mostrarSeccion('facturacion')">FACTURACION</button>
+    </div>
+
+    <div class="seccion" id="usuarios">
+        <h2>Sección de Usuarios</h2>    
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_usuario')">Id Usuario</button>
+            <button onclick="mostrarSubseccion('Nombre')">Nombre</button>
+            <button onclick="mostrarSubseccion('Usuario')">Usuario</button>
+            <button onclick="mostrarSubseccion('Password')">Password</button>
+            <button onclick="mostrarSubseccion('Perfil')">Perfil</button>
+            <button onclick="mostrarSubseccion('Estado')">Estado</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="clientes">
+        <h2>Sección de Clientes</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_cliente')">Id Clientes</button>
+            <button onclick="mostrarSubseccion('Nombre')">Nombre</button>
+            <button onclick="mostrarSubseccion('Documento')">Documento</button>
+            <button onclick="mostrarSubseccion('Email')">Email</button>
+            <button onclick="mostrarSubseccion('Telefono')">Telefono</button>
+            <button onclick="mostrarSubseccion('FechaNacimiento')">Fecha Nacimiento</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="ventas">
+        <h2>Sección de Ventas</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_ventas')">Id ventas</button>
+            <button onclick="mostrarSubseccion('Id_cliente')">Id cliente</button>
+            <button onclick="mostrarSubseccion('Id_usuario')">Id usuario</button>
+            <button onclick="mostrarSubseccion('Id_productos')">Id productos</button>
+            <button onclick="mostrarSubseccion('Código')">Código</button>
+            <button onclick="mostrarSubseccion('Productos')">Productos</button>
+            <button onclick="mostrarSubseccion('Cantidad')">Cantidad</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="proveedores">
+        <h2>Sección de Proveedores</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_proveedor')">Id Proveedor</button>
+            <button onclick="mostrarSubseccion('Razon social')">Nombre</button>
+            <button onclick="mostrarSubseccion('numero_identificació')">Documento</button>
+            <button onclick="mostrarSubseccion('Email')">Email</button>
+            <button onclick="mostrarSubseccion('Telefono')">Telefono</button>
+            <button onclick="mostrarSubseccion('Tipodepago')">Tipo de Pago</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="categorias">
+        <h2>Sección de Categorias</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('BuscarCategoria')">Buscar categoria</button>
+            <button onclick="mostrarSubseccion('CrearCategoria')">Crear categoria</button>
+            <button onclick="mostrarSubseccion('ActualizarCategoria')">Actualizar categoria</button>
+            <button onclick="mostrarSubseccion('EliminarCategoria')">Eliminar categoria</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="productos">
+        <h2>Sección de Productos</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('BuscarProducto')">Buscar producto</button>
+            <button onclick="mostrarSubseccion('CrearProducto')">Crear producto</button>
+            <button onclick="mostrarSubseccion('ModificarProdcuto')">Modificar producto</button>
+            <button onclick="mostrarSubseccion('EliminarProducto')">Eliminar producto</button>
+            <button onclick="mostrarSubseccion('StockProducto')">Stock producto</button> 
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="Id_facturacion">
+        <h2>Sección de Id_Facturacion</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_ventas')">Id ventas</button>
+            <button onclick="mostrarSubseccion('Id_cliente')">Id cliente</button>
+            <button onclick="mostrarSubseccion('Id_usuario')">Id usuario</button>
+            <button onclick="mostrarSubseccion('Id_producto')">Id productos</button>
+            <button onclick="mostrarSubseccion('Código')">Código</button>
+            <button onclick="mostrarSubseccion('Descripcion')">Productos</button>
+            <button onclick="mostrarSubseccion('Cantidad')">Cantidad</button>
+            <button onclick="mostrarSubseccion('Neto')">Neto</button>
+            <button onclick="mostrarSubseccion('Impuesto')">Impuesto</button>
+            <button onclick="mostrarSubseccion('Total')">Total</button>
+            <button onclick="mostrarSubseccion('MetododePago')">Metodo de Pago</button>
+            <button onclick="mostrarSubseccion('Fecha')">Fecha</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+
+    <div class="seccion" id="facturacion">
+        <h2>Sección de Facturación</h2>
+        <div class="botones">
+            <button onclick="mostrarSubseccion('Id_factura')">Id factura</button>
+            <button onclick="mostrarSubseccion('MostrarId_Factura')">Mostrar Id_factura</button>
+            <button onclick="mostrarSubseccion('ModificarId_Factura')">Modificar Id_factura</button>
+            <button onclick="mostrarSubseccion('EliminarId_factura')">Eliminar Id_factura</button>
+            <a href="#" onclick="mostrarSeccion('principal')">Volver a Principal</a>
+        </div>
+    </div>
+</body>
+</html>
